@@ -26,7 +26,7 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { Watch } from 'vue-property-decorator';
-import AboutComponent from './about.vue';
+import AboutComponent from './About.vue';
 
 @Component({
   components: {

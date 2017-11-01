@@ -12,13 +12,13 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 $ npm install -g vue-cli
 $ vue init TNOCS/vue-typescript-webpack-simple my-project
 $ cd my-project
-$ npm install
-$ npm run dev
+$ npm install  # or `yarn`
+$ npm run dev  # or `yarn dev`
 ```
 
 ### What's Included
 
-- `npm run dev`: Webpack + `vue-loader` with proper config for Typescript, source maps & hot-reload.
+- `npm run dev` or `yarn dev`: Webpack + `vue-loader` with proper config for Typescript, source maps & hot-reload.
 
 - `npm run build`: build with HTML/CSS/JS minification.
 

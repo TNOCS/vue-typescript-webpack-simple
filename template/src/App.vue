@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
+    <h1>\{{ msg }}</h1>
     <button @click="clickMe()">click</button>
     <input type="text" v-model="msg"></input>
     <about :about="msg"></about>

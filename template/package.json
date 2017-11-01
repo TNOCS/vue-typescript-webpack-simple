@@ -12,9 +12,8 @@
     "vue": "^2.4.4"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.5.3",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
@@ -24,6 +23,8 @@
     {{/sass}}
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^6.0.0",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }

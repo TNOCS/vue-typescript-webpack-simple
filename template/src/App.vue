@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <h1>\{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
+    <button @click="clickMe()">click</button>
+    <input type="text" v-model="msg"></input>
+    <about :about="msg"></about>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -19,13 +22,27 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+<script lang="ts">
+import Vue from 'vue';
+import Component from 'vue-class-component';
+import { Watch } from 'vue-property-decorator';
+import AboutComponent from './about.vue';
+
+@Component({
+  components: {
+    'about': AboutComponent
+  }
+})
+export default class App extends Vue {
+  public msg = 'Hello';
+
+  @Watch('msg')
+  msgChanged(data: string) {
+    console.log(`msg changed: ${data}`);
+  }
+
+  clickMe() {
+    alert(`I was clicked: ${this.msg}`);
   }
 }
 </script>

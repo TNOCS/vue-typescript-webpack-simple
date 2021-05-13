@@ -13,7 +13,7 @@ import { Watch, Prop } from 'vue-property-decorator';
 @Component({})
 export default class AboutComponent extends Vue {
   @Prop({type: String, default: 'watch out, this is required', required: true})
-  public about: string;
+  public about: string = "";
 
   @Watch('about')
   log(data: string) {
